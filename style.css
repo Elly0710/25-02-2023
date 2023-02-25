@@ -10,14 +10,13 @@
 
 .container .menu-left {
   width: 30%;
-  border: 1px solid black;
 }
 
 .container .menu-left .item {
   box-sizing: border-box;
   width: 100%;
   padding: 10px 5px;
-  margin-top: 3px;
+  margin-top: 8px;
   color: palevioletred;
   background-color: aliceblue;
 }
@@ -37,13 +36,32 @@
   text-align: center;
 }
 
-.container .menu-right .box img {
+.container .menu-right .box .image {
   width: 100%;
   height: 50%;
+  height: 250px;
+  position: relative;
+  margin-bottom: 5px;
 }
 
-.container .menu-right .box img:first-child {
+.container .menu-right .box .image img{
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+}
+
+/* .container .menu-right .box .image img:first-child {
+  position: absolute;
+} */
+
+.container .menu-right .box .image img:nth-child(1) {
   display: none;
+  position: absolute;
+}
+
+.container .menu-right .box .image:hover img:nth-child(1)  {
+  display: block;
 }
 
 .container .menu-right .box .brand {
