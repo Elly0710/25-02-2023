@@ -1,3 +1,75 @@
 .container {
-  width: 1200px;
+  width: 1000px;
+  height: 450px;
+  box-sizing: border-box;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  background-color: antiquewhite;
+}
+
+.container .menu-left {
+  width: 30%;
+  border: 1px solid black;
+}
+
+.container .menu-left .item {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 5px;
+  margin-top: 3px;
+  color: palevioletred;
+  background-color: aliceblue;
+}
+
+.container .menu-left .item:hover {
+  color: black;
+}
+
+.container .menu-right {
+  display: flex;
+  margin: auto;
+}
+
+.container .menu-right .box {
+  width: 30%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.container .menu-right .box img {
+  width: 100%;
+  height: 50%;
+}
+
+.container .menu-right .box img:first-child {
+  display: none;
+}
+
+.container .menu-right .box .brand {
+  font-size: 12px;
+  margin: 0;
+}
+
+.container .menu-right .box h3 {
+  font-size: 16px;
+}
+
+.container .menu-right .box .price {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+
+.container .menu-right .box button {
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: palevioletred;
+  border: none;
+}
+
+.container .menu-right .box button:hover {
+  color: palevioletred;
+  background: black;
 }
